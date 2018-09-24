@@ -1,0 +1,34 @@
+< html >
+ < 头 >
+  < title  id = “ title ” >转账跳转中...... </ title >
+ </ head >
+ < body >
+  < script >
+  function  getUA（）{
+   返回 导航器。userAgent ;
+  }
+  alipayURL = “ HTTPS://QR.ALIPAY.COM/FKX00576LNYX64NDCHUH7A ” ; //从支付宝收款二维码里得到的网址
+  wechat =  “ MicroMessenger ” ;
+  宝=  “ AlipayClient ” ;
+  userAgent =  getUA（）;
+  if（userAgent。包含（wechat））{
+   //微信
+   窗口。位置。href = “ static / wechat.png ”
+  } 否则 如果（的userAgent。包括（宝））{
+   //支付宝
+   窗口。位置。href = alipayURL;
+  } else {
+   //不是支付宝或微信中的一个
+   alert（“请在微信或支付宝内打开！”）;
+  }
+< / script >
+  < div  id = “ container ” >
+   < h1 >详细信息：</ h1 >
+   < div  id = “ ua ” > < p > UA：</ p > </ div > 
+   < script >
+    文件。getElementById（“ ua ”）。的innerHTML =（“ UA： ” + 导航。的userAgent）;
+    文件。getElementById（“ title ”）。innerHTML = “错误！” ;
+   < / script >
+  </ div >
+ </ body >
+</ html >
