@@ -1,33 +1,33 @@
 < html >
- < Í· >
-  < title  id = ¡° title ¡± >×ªÕËÌø×ªÖĞ...... </ title >
+ < å¤´ >
+  < title  id = â€œ title â€ >è½¬è´¦è·³è½¬ä¸­...... </ title >
  </ head >
  < body >
   < script >
-  function  getUA£¨£©{
-   ·µ»Ø µ¼º½Æ÷¡£userAgent ;
+  function  getUAï¼ˆï¼‰{
+   è¿”å› å¯¼èˆªå™¨ã€‚userAgent ;
   }
-  alipayURL = ¡° HTTPS://QR.ALIPAY.COM/FKX00576LNYX64NDCHUH7A ¡± ; //´ÓÖ§¸¶±¦ÊÕ¿î¶şÎ¬ÂëÀïµÃµ½µÄÍøÖ·
-  wechat =  ¡° MicroMessenger ¡± ;
-  ±¦=  ¡° AlipayClient ¡± ;
-  userAgent =  getUA£¨£©;
-  if£¨userAgent¡£°üº¬£¨wechat£©£©{
-   //Î¢ĞÅ
-   ´°¿Ú¡£Î»ÖÃ¡£href = ¡° static / wechat.png ¡±
-  } ·ñÔò Èç¹û£¨µÄuserAgent¡£°üÀ¨£¨±¦£©£©{
-   //Ö§¸¶±¦
-   ´°¿Ú¡£Î»ÖÃ¡£href = alipayURL;
+  alipayURL = â€œ HTTPS://QR.ALIPAY.COM/FKX00576LNYX64NDCHUH7A â€ ; //ä»æ”¯ä»˜å®æ”¶æ¬¾äºŒç»´ç é‡Œå¾—åˆ°çš„ç½‘å€
+  wechat =  â€œ MicroMessenger â€ ;
+  å®=  â€œ AlipayClient â€ ;
+  userAgent =  getUAï¼ˆï¼‰;
+  ifï¼ˆuserAgentã€‚åŒ…å«ï¼ˆwechatï¼‰ï¼‰{
+   //å¾®ä¿¡
+   çª—å£ã€‚ä½ç½®ã€‚href = â€œ static / wechat.png â€
+  } å¦åˆ™ å¦‚æœï¼ˆçš„userAgentã€‚åŒ…æ‹¬ï¼ˆå®ï¼‰ï¼‰{
+   //æ”¯ä»˜å®
+   çª—å£ã€‚ä½ç½®ã€‚href = alipayURL;
   } else {
-   //²»ÊÇÖ§¸¶±¦»òÎ¢ĞÅÖĞµÄÒ»¸ö
-   alert£¨¡°ÇëÔÚÎ¢ĞÅ»òÖ§¸¶±¦ÄÚ´ò¿ª£¡¡±£©;
+   //ä¸æ˜¯æ”¯ä»˜å®æˆ–å¾®ä¿¡ä¸­çš„ä¸€ä¸ª
+   alertï¼ˆâ€œè¯·åœ¨å¾®ä¿¡æˆ–æ”¯ä»˜å®å†…æ‰“å¼€ï¼â€ï¼‰;
   }
 < / script >
-  < div  id = ¡° container ¡± >
-   < h1 >ÏêÏ¸ĞÅÏ¢£º</ h1 >
-   < div  id = ¡° ua ¡± > < p > UA£º</ p > </ div > 
+  < div  id = â€œ container â€ >
+   < h1 >è¯¦ç»†ä¿¡æ¯ï¼š</ h1 >
+   < div  id = â€œ ua â€ > < p > UAï¼š</ p > </ div > 
    < script >
-    ÎÄ¼ş¡£getElementById£¨¡° ua ¡±£©¡£µÄinnerHTML =£¨¡° UA£º ¡± + µ¼º½¡£µÄuserAgent£©;
-    ÎÄ¼ş¡£getElementById£¨¡° title ¡±£©¡£innerHTML = ¡°´íÎó£¡¡± ;
+    æ–‡ä»¶ã€‚getElementByIdï¼ˆâ€œ ua â€ï¼‰ã€‚çš„innerHTML =ï¼ˆâ€œ UAï¼š â€ + å¯¼èˆªã€‚çš„userAgentï¼‰;
+    æ–‡ä»¶ã€‚getElementByIdï¼ˆâ€œ title â€ï¼‰ã€‚innerHTML = â€œé”™è¯¯ï¼â€ ;
    < / script >
   </ div >
  </ body >
